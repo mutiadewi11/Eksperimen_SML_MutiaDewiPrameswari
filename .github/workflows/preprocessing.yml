@@ -26,11 +26,11 @@ jobs:
 
     - name: Run preprocessing script
       working-directory: preprocessing
-      run: |
-        python automate_mutia.py
+      run: 
+        python automate_MutiaDewiPrameswari.py
 
     - name: Upload preprocessing artifact
       uses: actions/upload-artifact@v4
       with:
         name: breast-cancer-preprocessed
-        path: preprocessing/breast_cancer_preprocessed.csv
+        path: preprocessing/breast_cancer_preprocessing.csv
